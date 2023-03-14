@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+</head>
+<body>
+  <form action="formHandler.php">
+    <h2>Форма заявки на работу в зоопарке</h2>
+    <p>Пожалуйста заполните форму. Обязательные поля помечены*</p>
+    <br>
+<fieldset>
+  <legend>Контактная информация</legend>
+  <ul>
+    <li>
+  <label for="name">Имя*</label>
+  <input type="text">
+</li>
+<li>
+  <label for="tel">Телефон</label>
+  <input type="tel">
+</li>
+<li>
+  <label for="email">Email*</label>
+  <input type="email">
+</li>
+</ul>
+</fieldset>
+<br>
+<fieldset>
+  <legend>Персональная информация</legend>
+  <ul>
+    <li>
+      <label for="age">Возраст*</label>
+      <input type="number">
+    </li>
+    <li>
+      <label for="sex">Пол</label>
+      <select name="sex" id="sex">
+        <option value="men">Мужской</option>
+        <option value="woman">Женский</option>
+      </select>
+    </li>
+    <li>
+      <label for="message">Перечислите личные качества</label>
+      <textarea name="comment" id="message" cols="30" rows="10"></textarea>
+    </li>
+  </ul>
+</fieldset>
+<br>
+<fieldset>
+  <legend>Выберите ваших любимых животных</legend>
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox"> Зебра
+      </label>
+      <label>
+        <input type="checkbox"> Кошак
+      </label>
+      <label>
+        <input type="checkbox"> Анаконда
+      </label>
+      <label>
+        <input type="checkbox"> Человек
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox"> Слон
+      </label>
+      <label>
+        <input type="checkbox"> Антилопа
+      </label>
+      <label>
+        <input type="checkbox"> Голубь
+      </label>
+      <label>
+        <input type="checkbox"> Краб
+      </label>
+    </li>
+  </ul>
+</fieldset>
+<br>
+<input type="submit" value="Отправить информацию">
+  </form>
+</body>
+</html>
