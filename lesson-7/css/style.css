@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box; 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font: 400 14px/1.4 "Arial", "Gilroy", "OpenSans", sans-serif;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font: 600 22px/1.1 "Gilroy", sans-serif;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 25px #C7C7C7;
+  border-radius: 5px;
+  margin: 40px;
+}
+
+.img1 {
+  height: 100px;
+  margin: 19px calc(50% - 50px) 0;
+}
+
+.img2 {
+  margin: 39px calc(50% - 33px) 0;
+  height: 66px;
+}
+
+.title1 {
+  font: 600 22px/1.1 "Gilroy", sans-serif;
+  width: 97px;
+  height: 24px;
+  margin: 25px calc(50% - 48.5px) 0;
+}
+
+.title2 {
+  font: 600 22px/1.1 "Gilroy", sans-serif;
+  width: 252px;
+  height: 24px;
+  margin: 24px calc(50% - 127px) 0;
+}
+
+.text {
+  width: 100%;
+  max-width: 380px;
+  font: 400 14px/1.2 "Gilroy", sans-serif;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 24px calc(50% - 190px) 35px;
+}
+
+.price {
+  width: 111px;
+  height: 24px;
+  font: 600 22px/1.1 "Gilroy", sans-serif;
+  margin: auto calc(50% - 56px) 44px;
+}
+
+.order {
+  width: 200px;
+  height: 70px;
+  background: #E31E24;
+  border-radius: 5px;
+  color: #FFF;
+  font: 600 18px/1.1 "Gilroy", sans-serif;
+  margin: 44px 120px 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 465px;
+  justify-content: space-between;
+  margin-top: 59px;
+}
+
+.buttons_list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 245px;
+}
+
+.page {
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #C7C7C7;
+}
+
+.page-active {
+  width: 50px;
+  height: 50px;
+  background: #E31E24;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #C7C7C7;
+  color: #FFF;
+}
+
+.page:hover {
+  background-color: #E31E24;
+  color: #fff;
+}
