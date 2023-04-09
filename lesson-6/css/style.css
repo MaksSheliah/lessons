@@ -1,0 +1,123 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box; 
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Medium") format("truetype");
+  font-display: swap;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+} 
+
+body {
+  color: #000;
+  font: 400 14px/1.4 "Arial","Roboto",sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+  padding: 67px 150px 115px;
+  background: #f2f8f6;
+  display: flex;
+}
+
+.white-wrap {
+  width: 446px;
+  height: 437px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  top: -48px;
+  left: -33px;
+  z-index: 1;
+  }
+
+.white-wrap::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  border: 20px solid #3D8455;
+  top: 40px;
+  left: 33px;
+  width: 446px;
+  height: 437px;
+}
+
+.green-wrap_img {
+  width: 222px;
+  position: absolute;
+  top: calc(50% + 48px);
+  left: calc(50% + 33px);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.content {
+  width: 550px;
+  margin-left: 42px;
+  display: inline-block;
+}
+
+.button {
+  padding: 0 43px;
+  width: 211px;
+  height: 57px;
+  background: #408858;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 42px;
+}
+
+.list_item {
+  color: #26292e;
+  font: 500 20px/1.4 "Roboto", sans-serif;
+  position: relative;
+  margin-bottom: 13px;
+  padding-left: 15px;
+}
+
+.list_item:last-child {
+  margin: 0;
+}
+
+.list_item::before { 
+  content: "";
+  width: 12px;
+  height: 13px;
+  background: url("/lessons/lesson-6/icon/ic1.png") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.list {
+  margin-top: 23px;
+}
+
+.text { 
+  font: 400 20px/1.4 "Roboto", sans-serif;
+  color: #26292e;
+  margin-top: 19px;
+}
+
+.title {
+  font: 500 50px "Roboto", sans-serif;
+  color: #26292e;
+}
