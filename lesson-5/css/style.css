@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,::before,::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: 400 14px/1.4 "Arial","Montserrat",sans-serif;
+}
+
+section {
+  width: 100%;
+  max-width: 1220px;
+  margin: auto;
+  font-family:"Montserrat",sans-serif ;
+  
+}
+
+.title {
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  color: #E31E24;
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+span {
+  color: #2753A2;
+}
+
+.title-2 {
+  max-width: 773px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 20px auto 0;
+}
+
+.list {
+  display: flex;
+  margin-top: 65px;
+}
+
+.list_item {
+  display: inline-block;
+  margin-right: 25px;
+  border-radius: 10px;
+  font-size: 1px;
+  padding: 50px 20px 30px;
+}
+
+.list__item:last-of-type {
+  margin-right: 0;
+}
+
+.list_title-1 {
+font-family: "Montserrat";
+font-style: normal;
+font-weight: 500;
+font-size: 26em;
+text-align: center;
+line-height: 32px;
+color: #2753A2;
+}
+
+.list_text-1 {
+  font-weight: 500;
+  font-size: 20em;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 10px;
+  color: #222222;
+}
+
+img {
+  display: block;
+  margin-inline: auto;
+}
+
+.list_title-2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26rem;
+  line-height: 32px;
+  color: #2753A2;
+  text-align: center;
+}
+
+.list_text-2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 10px;
+  color: #222222;
+}
+
+.list_title-3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #2753A2;
+}
+
+.list_text-3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #222222;
+  margin-top: 10px;
+}
