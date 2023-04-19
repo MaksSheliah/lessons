@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.check {
+  display: none;
+}
+
+body {
+  font: 400 14px/1.4 "Arial", "Roboto", "Montserrat", sans-serif;
+}
+
+
+
+.wrap {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.order {
+  width: 605px;
+}
+
+.order-title {
+  font: 500 50px/1.2 "Roboto", sans-serif;
+  color: #26292e;
+}
+
+.order-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-text {
+  font: 500 20px/1.2 "Montserrat", sans-serif;
+  display: block;
+}
+
+.input-text {
+  font: 500 16px/1.2 "Montserrat", sans-serif;
+  height: 49px;
+  box-shadow: 0 0 10px rgba(38, 41, 46, 0.25);
+  padding-inline: 19px;
+  margin-top: 10px;
+  width: 605px;
+}
+
+.order-title:first-of-type {
+  margin-top: 0 0 55px 0;
+}
+
+.area {
+  resize: none;
+  height: 146px;
+  width: 605px;
+}
+
+button {
+  margin-top: 19px;
+  padding: 18px 36px;
+  height: 58px;
+  color: #FFF;
+  border: none;
+  background: #408858;
+  font: 500 20px/24px "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.delivery {
+  width: 100%;
+  max-width: 635px;
+}
+
+.delivery-title {
+  font: 500 50px/1.2 "Roboto", sans-serif;
+  color: #26292e;
+  margin: 0 0 55px 40px;
+}
+
+.choose-text {
+  font: 400 20px/1.4 "Roboto", sans-serif;
+  color: #414141;
+  margin-top: 10px;
+}
+
+.address {
+  color: #26292e;
+}
+
+.check-text {
+  height: 35px;
+  font: 400 30px/35px "Roboto", sans-serif;
+  color: #414141;
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+}
+
+label :last-child {
+  margin-bottom: 29px;
+}
+
+.check-text::before, .check-text::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.check-text::before {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #408858;
+  left: 0;
+}
+
+.check-text::after {
+  width: 8px;
+  height: 8px;
+  background: #408858;
+  left: 4px;
+  opacity: 0;
+  transition: .3s;
+
+}
+
+.check:checked+.check-text::after {
+  opacity: 1;
+}
+
+.checkbox {
+  margin-top: 55px;
+}
+
+.choose {
+  margin-top: 29px;
+}
+
+@media (max-width: 968px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order {
+    order: 2;
+    width: 100%;
+    max-width: 605px;
+  }
+
+  .delivery {
+    order: 1;
+  }
+}
+
