@@ -1,0 +1,31 @@
+body {
+  background: #000;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-glass-holder {
+  width: 60px;
+  height: 75px;
+  background-image: url(../img/pintsandcrafts_beer.png);
+  background-repeat: repeat-x;
+  background-color: #ffc123;
+  animation: beer 7s ease-in-out infinite;
+}
+
+.loader-glass {
+  width: 100%;
+  background-image: url(../img/beer_load.png);
+  padding-bottom: 125%;
+}
+
+@keyframes beer {
+  100% {
+    background-position: 1050px 0;
+  }
+  
+}
